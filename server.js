@@ -15,11 +15,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+const config = { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false }
+
 // mongoose connects to Robo 3T's ez-budget at localhost:3000
-mongoose.connect("mongodb://localhost/ez-budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ez-budget", config);
 
 // routes
 app.use(require("./routes/api.js"));

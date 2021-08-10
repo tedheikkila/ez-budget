@@ -24,7 +24,7 @@ uses PWA &amp; IndexedDB to track expenses, handles downed internet/data
 
   Check out the app on Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)]()
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://ancient-shelf-54596.herokuapp.com/)
 
   ## License
   
