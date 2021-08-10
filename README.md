@@ -1,5 +1,5 @@
 # ez-budget
-uses PWA &amp; IndexedDB to track expenses to handle downed internet/data
+uses PWA &amp; IndexedDB to track expenses, handles downed internet/data
 
 ## Table of Contents
 
