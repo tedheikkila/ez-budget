@@ -40,7 +40,25 @@ uses PWA &amp; IndexedDB to track expenses, handles downed internet/data
 
     ![](./public/images/hw19-1.png)
 
-* placeholder
+* service worker registered
 
    ![](./public/images/hw19-2.png)
+
+* throttling internet off
+
+    ![](./public/images/hw19-3.png)
+
+* transaction gets added to IndexedDB's pending
+
+   ![](./public/images/hw19-4.png)
+
+* app functions normally
+
+    ![](./public/images/hw19-5.png)
+
+* when internet/data restored post request to db is completed
+
+   ![](./public/images/hw19-6.png)
+
+
 
