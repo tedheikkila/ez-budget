@@ -15,6 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+// mongoose connects to Robo 3T's ez-budget at localhost:3000
 mongoose.connect("mongodb://localhost/ez-budget", {
   useNewUrlParser: true,
   useFindAndModify: false
