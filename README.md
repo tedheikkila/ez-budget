@@ -12,13 +12,13 @@ uses PWA &amp; IndexedDB to track expenses, handles downed internet/data
 
   ## Description
 
-  This is a PC and mobile app designed to function as a placeholder.
+  This is a PC and mobile app designed to function as a budget tracker for any instancer where a user might be prone to poor data or spotty internet connectivity (remote locations, certain buildings, etc). EZ Budget allows the user to add funds and subtract expenses from their budget. If for whatever reason the internet were to go down, their expenses are saved in IndexedDB and when the internet is restored these are bulk posted to the Mongo Atlas database called ez-budget.
   
   ## Technologies:
 
-  * Front-end: HTML, CSS, Js
-  * Back-end: 
-  * Dev-deps: 
+  * Front-end: HTML, CSS, Js, service worker, IndexedDB
+  * Back-end: mongoose, MongoDB, Robo 3T, express
+  * Dev-deps: nodemon, Chrome's network/application features
 
   ## Deployment:
 
@@ -52,11 +52,11 @@ uses PWA &amp; IndexedDB to track expenses, handles downed internet/data
 
    ![](./public/images/hw19-4.png)
 
-* app functions normally
+* app functions normally w/out data/internet
 
     ![](./public/images/hw19-5.png)
 
-* when internet/data restored post request to db is completed
+* when internet/data restored post request to Robot 3T db's ez-budget is completed
 
    ![](./public/images/hw19-6.png)
 
