@@ -32,7 +32,7 @@ request.onsuccess = ({ target }) => {
 
 // Simple error handler. Leave as-is
 request.onerror = function(event) {
-  console.log("Woops! " + event.target.errorCode);
+  console.log("Error " + event.target.errorCode);
 };
 
 // This function is called when it's time to save data to the indexedDb
