@@ -17,7 +17,8 @@ app.use(express.static("public"));
 
 const config = { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false }
 
-// mongoose connects to Robo 3T's ez-budget at localhost:3000
+// mongoose connects to Robo 3T's ez-budget at localhost:3000 
+// OR MongoDB Atlas via Heroku process.env.PORT
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ez-budget", config);
 
 // routes
